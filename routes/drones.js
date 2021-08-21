@@ -56,10 +56,9 @@ router.post("/drones/:id/update-form", (req, res, next) => {
             console.log("drone updated", drone);
             res.redirect(`/drones/${drone._id}`);
         })
-
-    .catch((err) => {
-        console.log(err);
-    });
+        .catch((err) => {
+            console.log(err);
+        });
 });
 // Iteration #4: Update the drone
 // ... your code here
